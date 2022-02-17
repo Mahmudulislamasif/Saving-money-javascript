@@ -1,10 +1,11 @@
-
+// Create function for calculate button
 function updateBalance(isUpdated)
 {
     const inputIncome=document.getElementById('input-income');
     const inputIncomeValue=inputIncome.value;
     if(isUpdated==true)
     {
+        // take input for onclick calculate
         const inputFoodCost=document.getElementById('input-food-cost');
         const inputFoodCostValue=inputFoodCost.value;
         const inputRentCost=document.getElementById('input-rent-cost');
@@ -12,6 +13,7 @@ function updateBalance(isUpdated)
         const inputClothCost=document.getElementById('input-cloth-cost');
         const inputClothCostValue=inputClothCost.value;
         let inputTotalExpense=document.getElementById('show-total-expenses');
+        // Check error case for calculate
         if(inputIncomeValue=='' || inputFoodCostValue=='' || inputRentCostValue=='' || inputClothCostValue=='')
         {
             alert('Please Fill the empty field');
@@ -47,8 +49,10 @@ function updateBalance(isUpdated)
         updateRemainingBalance();
     }
 }
+// Create function for save button
 function updateRemainingBalance()
 {
+    // take input field for onclick save button
     const inputIncome=document.getElementById('input-income');
     const inputIncomeValue=parseFloat(inputIncome.value);
     const savingAccount=document.getElementById('saving-amount');
@@ -59,6 +63,7 @@ function updateRemainingBalance()
     const totalSavingAccount=document.getElementById('total-saving-amount');
     totalSavingAccount.innerText=(inputIncomeValue*savingAccountText)/100
     const totalSavingAccountSave=totalSavingAccount.innerText;
+    //    Check erroe case for save button
         if(getBalanceText-totalSavingAccountSave>=0)
         {
             getRemainingBalance.innerText=getBalanceText-totalSavingAccountSave;
