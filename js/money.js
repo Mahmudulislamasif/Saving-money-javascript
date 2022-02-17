@@ -22,7 +22,7 @@ function updateBalance(isUpdated)
         {
             alert('Please Take number as an input Not String');
         }
-        else if(inputIncomeValue<0 || inputFoodCostValue<0 || inputClothCostValue<0)
+        else if(inputIncomeValue<0 || inputFoodCostValue<0 || inputClothCostValue<0 || inputRentCostValue<0)
         {
             alert('Negative Number is not allowed');
         }
