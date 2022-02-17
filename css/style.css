@@ -1,15 +1,18 @@
+/* Take font size from google font */
+
 @import url('https://fonts.googleapis.com/css2?family=Poppins&display=swap');
 
-
+/* Apply font family poppin for whole body */
 body{
     font-family: 'Poppins', sans-serif;
 }
+/* Change function of input column */
 .column
 {
     background-color: rgb(232, 243, 243);
     padding: 2rem;
 }
-
+/* Change properties of headings */
 .headings
 {
     text-align: center;
